@@ -41,7 +41,7 @@ class ConvertToPDF
       html += add_space(30)
     end
 
-    @kit = PDFKit.new(html, page_size: 'A4')
+    @kit = PDFKit.new(html, page_size: 'A4', dpi: '300')
     @kit
   end
 
